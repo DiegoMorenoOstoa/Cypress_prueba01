@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "proyecto de pruebas",
+  "main": "index.js",
+  "viewportWidth": 1500,
+  "viewportHeight": 900,
+  "scripts": {
+    "test": "cypress open --browser chrome --e2e"
+  },
+  "baseUrl": "https://www.liverpool.com.mx/tienda/home",
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 10000,
+  "defaultComandTimeout": 15000,
+  "author": "diego",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "@cypress/xpath": "^2.0.3",
+    "cypress-file-upload": "^5.0.8",
+    "neat-csv": "^5.2.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress-drag-drop": "^1.1.1"
+  }
+}
